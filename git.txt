@@ -1,0 +1,27 @@
+#create a folder of git
+
+#open that folder using gitbash
+
+#git init
+
+#git config --global user.name "name of user"
+
+#git config --global user.email "email of user"
+
+# git clone SSH link of project
+
+#yes
+
+#git add .
+
+#git status
+
+#git commit -m "first commit"
+
+#git status
+
+#git remote add origin SSH link
+
+#git remote -v
+
+#git push origin master
