@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        form{
+            border: 3px solid black;
+            padding: 5px;
+            margin-top: 50px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <script>
+        function Input()
+        {
+            obj = {First_name :document.getElementById("fname").value,
+                Middlet_name :document.getElementById("mname").value,
+                Last_name :document.getElementById("lname").value,
+                address :document.getElementById("address").value,
+                Email :document.getElementById("email").value
+            }
+
+            const myjson = JSON.stringify(obj);
+            localStorage.setItem("hellojson" , myjson)
+        }
+    </script>
+    <form action="second.html">
+        <label for="fname">first name :</label>
+        <input type="text" name="fname" id="fname">
+        <br><br>
+        <label for="mname">middle name :</label>
+        <input type="text" name="mname" id="mname">
+        <br><br>
+        <label for="lname">last name :</label>
+        <input type="text" name="lname" id="lname">
+        <br><br>
+        <label for="address">address :</label>
+        <input type="text" name="address" id="address">
+        <br><br>
+        <label for="Email">Email :</label>
+        <input type="text" name="Email" id="email">
+        <br><br>
+        <input type="submit"  onclick="Input()">
+
+    </form>
+
+    <p id="demo"></p>
+</body>
+</html>

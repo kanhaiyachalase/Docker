@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fun() {
+        obj = {
+          First_Name: document.getElementById("fname").value,
+          Last_Name: document.getElementById("lname").value,
+          address: document.getElementById("address").value,
+          email: document.getElementById("email").value,
+        };
+
+        const myJSON = JSON.stringify(obj);
+        localStorage.setItem("hellojson", myJSON);
+      }
+    </script>
+    <form action="second.html">
+      <label for="fname">first name:</label>
+      <input type="text" name="fname" id="fname" />
+      <br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" name="lname" id="lname" />
+      <br /><br />
+      <label for="address">address</label>
+      <input type="text" name="address" id="address" />
+      <br /><br />
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" />
+      <br /><br /><br /><br />
+      <input type="submit" value="submit" onclick="fun()" />
+    </form>
+
+    <p id="demo"></p>
+  </body>
+</html>
