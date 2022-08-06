@@ -1,5 +1,6 @@
 # SNAPPY
 User can create and login the account and user can do chat with their friends he can send emojis and stickers. • Data in the application can be stored in secure and encrypted format.
+
 ![Screenshot (116)](https://user-images.githubusercontent.com/79249131/183234129-d7155d27-c77f-4205-ae9a-a135a9aa2359.png)
 
 ![Screenshot (119)](https://user-images.githubusercontent.com/79249131/183234139-fafea017-0283-4383-a00b-e3a8fac677dc.png)
